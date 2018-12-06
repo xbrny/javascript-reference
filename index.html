@@ -31,12 +31,6 @@
           <li>arr.forEach()</li>
           <li>Array.isArray()</li>
         </ul>
-        <h3>Object</h3>
-        <ul>
-          <li>Object.keys()</li>
-          <li>Object.values()</li>
-          <li>Object.entries()</li>
-        </ul>
       </div>
       <div class="col">
         <h3>Map, Set, WeakMap, WeakSet</h3>
@@ -94,7 +88,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col">
+      <div class="col" style="width: 180px">
         <h3>Number</h3>
         <ul>
           <li>num.toString</li>
@@ -126,6 +120,20 @@
         <ul>
           <li>JSON.stringify(obj [, replacer, space])</li>
           <li>JSON.parse(json [, reviver])</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Object</h3>
+        <ul>
+          <li>Object.keys()</li>
+          <li>Object.values()</li>
+          <li>Object.entries()</li>
+          <li>Object.create(proto[, descriptors])</li>
+          <li>Object.getPrototypeOf(obj)</li>
+          <li>Object.setPrototypeOf(obj, proto)</li>
+          <li>obj.hasOwnProperty(key)</li>
+          <li>obj.__proto__</li>
+          <li>Obj.prototype</li>
         </ul>
       </div>
     </div>
@@ -275,10 +283,10 @@ if(..) {
 } else {
   ..
 }
-</pre>          
+</pre>
 <pre>
 switch(..){
-  case 0: 
+  case 0:
     ..;
     break;
   default:
@@ -289,7 +297,7 @@ switch(..){
 while(..) {
   ..
 }
-</pre>          
+</pre>
 <pre>
 do {
   ..
@@ -314,7 +322,7 @@ function funcName(..) {
 let funcName = function(..) {
   ..
 };
-</pre>          
+</pre>
 <pre>
 let funcName = () => {
   ..
@@ -324,18 +332,18 @@ let funcName = () => {
 let funcName = n => {
   ..
 };
-</pre>          
+</pre>
 <pre>
 let funcName = (n, b) => {
   ..
 };
-</pre>          
+</pre>
 <pre>
 let funcName = b => ({..});
-</pre>          
+</pre>
 <pre>
 let funcName = (n, b) => n*b;
-</pre>          
+</pre>
 <pre>
 let funcName = (n, b) => {
   return n * b
@@ -346,13 +354,13 @@ let funcName = (n, b) => {
       <div class="col">
         <h3>Object</h3>
 <pre>
-let user = {   
+let user = {
   name: "John",
-  age: 30      
+  age: 30
 };
 </pre>
 <pre>
-let user = {   
+let user = {
   name
   age
 };
@@ -394,6 +402,26 @@ let user = new User("Jack");
 <pre>
   let [item1 = default, item2, ...rest] = array
 </pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3>Object Inheritence</h3>
+        <img src="/images/object-prototype-empty.png" alt="object-prototype-empty">
+      </div>
+      <div class="col">
+        <img src="/images/rabbit-prototype-constructor.png" alt="rabbit-prototype-constructor">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img src="/images/native-prototypes-classes.png" alt="native-prototypes-classes">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3>This</h3>
+        <img src="/images/this.png" alt="this">
       </div>
     </div>
   </body>
