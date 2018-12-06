@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS Reference</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col">
+        <h3>Array</h3>
+        <ul>
+          <li>arr.push()</li>
+          <li>arr.pop()</li>
+          <li>arr.shift()</li>
+          <li>arr.splice(i, count, ..item) <span>modify original</span></li>
+          <li>arr.slice(start, endExlusive)</li>
+          <li>arr.concat()</li>
+          <li>arr.includes()</li>
+          <li>arr.indexOf()</li>
+          <li>arr.find()</li>
+          <li>arr.filter()</li>
+          <li>arr.map()</li>
+          <li>arr.reduce()</li>
+          <li>arr.sort() <span>modify original</span></li>
+          <li>arr.reverse() <span>modify original</span></li>
+          <li>arr.split()</li>
+          <li>arr.join()</li>
+          <li>arr.forEach()</li>
+          <li>Array.isArray()</li>
+        </ul>
+        <h3>Object</h3>
+        <ul>
+          <li>Object.keys()</li>
+          <li>Object.values()</li>
+          <li>Object.entries()</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Map, Set, WeakMap, WeakSet</h3>
+        <ul>
+          <li>new Map() <span>like obj, anything as key</span></li>
+          <li>map.set(key, val)</li>
+          <li>map.get(key)</li>
+          <li>map.has(key)</li>
+          <li>map.delete(key)</li>
+          <li>map.clear(key)</li>
+          <li>map.size</li>
+          <li>map.keys()</li>
+          <li>map.values()</li>
+          <li>map.entries()</li>
+          <li>new Set() <span>like arr, unique</span></li>
+          <li>set.set(key, val)</li>
+          <li>set.get(key)</li>
+          <li>set.has(key)</li>
+          <li>set.delete(key)</li>
+          <li>set.clear(key)</li>
+          <li>set.size</li>
+          <li>set.keys()</li>
+          <li>set.values()</li>
+          <li>set.entries()</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Date & Time</h3>
+        <ul>
+          <li>Date.now()</li>
+          <li>Date.parse()</li>
+          <li>Date()</li>
+          <li>new Date()</li>
+          <li>new Date(miliseconds)</li>
+          <li>new Date(datestring)</li>
+          <li>new Date(year, month, day, hrs, sec, ms)</li>
+          <li>getFullYear()</li>
+          <li>getMonth()</li>
+          <li>getDate()</li>
+          <li>getHours()</li>
+          <li>getMinutes()</li>
+          <li>getSeconds()</li>
+          <li>getMiliseconds()</li>
+          <li>getDay()</li>
+          <li>getTime()</li>
+          <li>setFullYear(year [, month, date])</li>
+          <li>setMonth(month [, date])</li>
+          <li>setDate(date)</li>
+          <li>setHours(hour [, min, sec, ms])</li>
+          <li>setMinutes(min [, sec, ms])</li>
+          <li>setSeconds(sec [, ms])</li>
+          <li>setMilliseconds(ms)</li>
+          <li>setTime(milliseconds)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3>Number</h3>
+        <ul>
+          <li>num.toString</li>
+          <li>Math.floor()</li>
+          <li>Math.ceil()</li>
+          <li>Math.round()</li>
+          <li>Math.trunc()</li>
+          <li>Math.random()</li>
+          <li>Math.pow()</li>
+          <li>isNaN()</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>String</h3>
+        <ul>
+          <li>str.charAt()</li>
+          <li>str.slice(start, endExlusive)</li>
+          <li>str.substring(iInclude, iExclude)</li>
+          <li>str.toLowerCase()</li>
+          <li>str.toUpperCase()</li>
+          <li>str.indexOf()</li>
+          <li>str.includes()</li>
+          <li>str.trim()</li>
+          <li>str.repeat()</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>JSON</h3>
+        <ul>
+          <li>JSON.stringify(obj [, replacer, space])</li>
+          <li>JSON.parse(json [, reviver])</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3>General</h3>
+        <ul>
+          <li>use strict</li>
+          <li>let, const, var</li>
+          <li>Number</li>
+          <li>String</li>
+          <li>Boolean</li>
+          <li>undefined</li>
+          <li>null</li>
+          <li>Object</li>
+          <li>Symbol</li>
+          <li>typeof <code>var</code></li>
+        </ul>
+        <h3>Conversion</h3>
+        <ul>
+          <li>String() <span>1 + '2' / alert()</span></li>
+          <li>Number() / + <span>-+/*% / >= / 0 == false</span></li>
+          <li><span>undefined, 'string' -> NaN</span></li>
+          <li><span>null, false, '' -> 0</span></li>
+          <li><span>true -> 1</span></li>
+          <li>Boolean() <span>if && || !</span></li>
+          <li><span>0, null, undefined, NaN, '' -> false</span></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Precendence</h3>
+        <table border="1">
+          <tr>
+            <td rowspan="5">20</td>
+            <td>ltr</td>
+            <td>(group)</td>
+          </tr>
+          <tr>
+            <td>ltr</td>
+            <td>member.access</td>
+          </tr>
+          <tr>
+            <td>ltr</td>
+            <td>member[computed]</td>
+          </tr>
+          <tr>
+            <td>n/a</td>
+            <td>new Object(arg)</td>
+          </tr>
+          <tr>
+            <td>ltr</td>
+            <td>call()</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>rtl</td>
+            <td>new Object()</td>
+          </tr>
+          <tr>
+            <td rowspan="2">17</td>
+            <td>n/a</td>
+            <td>.. ++</td>
+          </tr>
+          <tr>
+            <td>n/a</td>
+            <td>.. --</td>
+          </tr>
+          <tr>
+            <td rowspan="6">16</td>
+            <td>rtl</td>
+            <td>! ...</td>
+          </tr>
+          <tr>
+            <td>rtl</td>
+            <td>+ ...</td>
+          </tr>
+          <tr>
+            <td>rtl</td>
+            <td>- ...</td>
+          </tr>
+          <tr>
+            <td>rtl</td>
+            <td>++ ...</td>
+          </tr>
+          <tr>
+            <td>rtl</td>
+            <td>-- ...</td>
+          </tr>
+          <tr>
+            <td>rtl</td>
+            <td>typeof, void, delete, await</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>rtl</td>
+            <td>... **</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>ltr</td>
+            <td>* / %</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>ltr</td>
+            <td>+ -</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>ltr</td>
+            <td>< <= => > in instanceof</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>ltr</td>
+            <td>== != === !===</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>ltr</td>
+            <td>&&</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>ltr</td>
+            <td>||</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>rtl</td>
+            <td>... ? ... : ...</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>rtl</td>
+            <td>= += -= /= %= &= |=</td>
+          </tr>
+        </table>
+      </div>
+      <div class="col">
+        <h3>Block</h3>
+<pre>
+if(..) {
+  ..
+} else if(..) {
+  ..
+} else {
+  ..
+}
+</pre>          
+<pre>
+switch(..){
+  case 0: 
+    ..;
+    break;
+  default:
+    ..
+}
+</pre>
+<pre>
+while(..) {
+  ..
+}
+</pre>          
+<pre>
+do {
+  ..
+} while(..)
+</pre>
+<pre>
+for(let i = 0; i < 10; i++) {
+  ..
+}
+</pre>
+<pre>
+for (let var of iterable) {
+  statement
+}
+</pre>
+<pre>
+function funcName(..) {
+  ..
+}
+</pre>
+<pre>
+let funcName = function(..) {
+  ..
+};
+</pre>          
+<pre>
+let funcName = () => {
+  ..
+};
+</pre>
+<pre>
+let funcName = n => {
+  ..
+};
+</pre>          
+<pre>
+let funcName = (n, b) => {
+  ..
+};
+</pre>          
+<pre>
+let funcName = b => ({..});
+</pre>          
+<pre>
+let funcName = (n, b) => n*b;
+</pre>          
+<pre>
+let funcName = (n, b) => {
+  return n * b
+}
+</pre>
+      </div>
+
+      <div class="col">
+        <h3>Object</h3>
+<pre>
+let user = {   
+  name: "John",
+  age: 30      
+};
+</pre>
+<pre>
+let user = {   
+  name
+  age
+};
+</pre>
+<pre>
+let fruit = 'apple'
+let bag = {
+  [fruit]: 5,
+};
+</pre>
+<pre>
+"key" in object
+</pre>
+<pre>
+for(let key in user) {
+  alert( key );
+  alert( user[key] );
+}
+</pre>
+<pre>
+function User(name) {
+  this.name = name;
+  this.isAdmin = false;
+  this.sayHi = function() {
+    alert( this.name );
+  };
+}
+
+let user = new User("Jack");
+</pre>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3>Destructuring Assignment</h3>
+<pre>
+  let {prop : varName = default, ...} = object
+</pre>
+<pre>
+  let [item1 = default, item2, ...rest] = array
+</pre>
+      </div>
+    </div>
+  </body>
+</html>
